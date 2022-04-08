@@ -1,8 +1,15 @@
 def main():
-	num = int(input("Ingresar numero "))
-	if num%2==0:
-		print("Par")
-	else:
-		print("No par")
+
+    # ingreso numero
+
+    num = int(input("Ingresar numero "))
+
+    # computo si es par o no
+
+    if num % 2 == 0:
+        print("Par")
+    else:
+        print("No par")
+
 
 main()

@@ -1,21 +1,31 @@
 def main():
-	paginas = int(input("Ingresar numero de paginas"))
 
-	costo_basico = 500
+    # defino constantes
 
-	costo_por_pagina = 3.20
+    COSTO_BASICO = 500
 
-	costo_total = 0
+    COSTO_POR_PAGINA = 3.20
 
-	if paginas <= 300:
-		costo_total = costo_basico + paginas*costo_por_pagina
-	elif paginas <=600:
-		costo_total = costo_basico + paginas*costo_por_pagina + 200
-	elif paginas > 600:
-		costo_total = costo_basico + paginas*costo_por_pagina + 336
+    # ingreso de paginas
 
+    paginas = int(input("Ingresar numero de paginas"))
 
-	print(costo_total)
+    # inicio la variable costo total con valor inicial 0
+
+    costo_total = 0
+
+    # proceso segun la cantidad de paginas que haya ingresado el usuario, el costo del libro
+
+    if paginas <= 300:
+        costo_total = COSTO_BASICO + paginas * COSTO_POR_PAGINA
+    elif paginas <= 600:
+        costo_total = COSTO_BASICO + paginas * COSTO_POR_PAGINA + 200
+    elif paginas > 600:
+        costo_total = COSTO_BASICO + paginas * COSTO_POR_PAGINA + 336
+
+    # muestro en pantalla el coste total
+
+    print(costo_total)
 
 
 main()
